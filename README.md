@@ -12,7 +12,7 @@ There isn't enough room on GitHub to host the resulting datasets, so they are po
 Details:
 
 I've made specific decisions about the data.
-  This was partly done to make the overall process feasible, but also so that single file (.csv or .xlsx) would load into a spreadsheet completely.
+  This was partly done to make the overall process feasible, but also so that a single file (.csv or .xlsx) would load into a spreadsheet completely.
   It should be relatively easy to modify the code alter these assumptions.  Specifically,
 
 1. Inclusion
