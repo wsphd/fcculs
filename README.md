@@ -1,6 +1,6 @@
 # fcculs
 
-Summary:
+***Summary***:
 
 This R script contains two main parts:
 
@@ -25,13 +25,13 @@ I've made specific decisions about the data.
     * I've excluded the celluar bands.
     * I've excluded all frequencies above 1.3GHz.
 
-Timing:
+**Timing**:
 
 It takes about 20 minutes to download all the necessary FCC ULS files.
   This rate appears to be throttled on the FCC side.
   The database joins generally the most amount of time.  More RAM and faster hard drives help.
 
-Code:
+*Code*:
 
 I've tried to use Base R functionality in most places.
   The few libraries that are used are listed at the top of the R script.
