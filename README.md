@@ -9,7 +9,7 @@ This R script contains two main parts:
 
 There isn't enough room on GitHub to host the resulting datasets, so they are posted at: https://smithw.org/scma/
 
-There is a file for each SoCal county in two formats: .xlsx and .csv.
+There is a file for each SoCal county in two formats: .csv and .xlsx.
 
 Details:
 
@@ -18,8 +18,9 @@ I've made specific decisions about the data.
   It should be relatively easy to modify the code to alter these assumptions.  Specifically,
 
 1. Inclusion
-    * I've included the ten counties in SoCal from the Mexican border to both Kern and San luis Obisbo in the north.
+    * I've included the ten counties in SoCal from the Mexican border to Kern and San Luis Obisbo counties in the north.
     * I've included only the 'Active' licenses.
+    * Either the location_county or control_county has to be populated.  If both are blank, the record isn't included.
 2. Exclusion
     * I've excluded the celluar bands.
     * I've excluded all frequencies above 1.3GHz.
