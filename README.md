@@ -15,11 +15,11 @@ I've made specific decisions about the data.
   It should be relatively easy to modify the code alter these assumptions.  Specifically,
 
 1. Inclusion
-  * I've included the ten counties in SoCal from the Mexican border to both Kern and San luis Obisbo in the north.
-  * I've included only the 'Active' licenses.
+    * I've included the ten counties in SoCal from the Mexican border to both Kern and San luis Obisbo in the north.
+    * I've included only the 'Active' licenses.
 2. Exclusion
-  * I've excluded the celluar bands.
-  * I've excluded all frequencies above 1.3GHz.
+    * I've excluded the celluar bands.
+    * I've excluded all frequencies above 1.3GHz.
 
 Timing:
 It takes about 20 minutes to download all the necessary FCC ULS files.  This rate appears to be throttled on the FCC side.
