@@ -1,6 +1,6 @@
 # fcculs
 
-***Summary***:
+**Summary**:
 
 This R script contains two main parts:
 
@@ -11,17 +11,17 @@ There isn't enough room on GitHub to host the resulting datasets, so they are po
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
 
-***Details***:
+**Details**:
 
 I've made specific decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single file (.csv or .xlsx) would load into a spreadsheet completely.
   It should be relatively easy to modify the code to alter these assumptions.  Specifically,
 
-1. Inclusion
+1. ***Inclusion***
     * I've included the ten counties in SoCal from the Mexican border to Kern and San Luis Obisbo counties in the north.
     * I've included only the 'Active' licenses.
     * Either the location_county or control_county has to be populated.  If both are blank, the record isn't included.
-2. Exclusion
+2. ***Exclusion***
     * I've excluded the celluar bands.
     * I've excluded all frequencies above 1.3GHz.
 
@@ -31,7 +31,7 @@ It takes about 20 minutes to download all the necessary FCC ULS files.
   This rate appears to be throttled on the FCC side.
   The database joins generally the most amount of time.  More RAM and faster hard drives help.
 
-*Code*:
+**Code**:
 
 I've tried to use Base R functionality in most places.
   The few libraries that are used are listed at the top of the R script.
