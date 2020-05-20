@@ -11,7 +11,7 @@ There isn't enough room on GitHub to host the resulting datasets, so they are po
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
 
-Details:
+***Details***:
 
 I've made specific decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single file (.csv or .xlsx) would load into a spreadsheet completely.
