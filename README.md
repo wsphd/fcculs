@@ -40,11 +40,8 @@ I've tried to use Base R functionality in most places.
   The code begins with the `main()` function at the bottom of the R script.
 
 
-Enjoy,
-
-Wayne Smith, Ph.D.
-
-N6LHV
-
-Southern California Monitoring Association (SCMA)
+Enjoy,\
+Wayne Smith, Ph.D.\
+N6LHV\
+Southern California Monitoring Association (SCMA)\
 
