@@ -18,9 +18,9 @@ I've made specific decisions about the data.
   It should be relatively easy to modify the code to alter these assumptions.  Specifically,
 
 1. ***Inclusion***
-    * I've included the ten counties in SoCal from the Mexican border to Kern and San Luis Obisbo counties in the north.
+    * I've included the ten (10) counties in SoCal from the Mexican border in the south to Kern and San Luis Obisbo counties in the north.
     * I've included only the 'Active' licenses.
-    * Either the location_county or control_county has to be populated.  If both are blank, the record isn't included.
+    * Either the 'location_county' column or 'control_county' column has to be populated.  If both are blank, the record isn't included.
 2. ***Exclusion***
     * I've excluded the cellular bands.
     * I've excluded all frequencies above 1.3GHz.
