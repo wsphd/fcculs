@@ -29,7 +29,7 @@ I've made specific decisions about the data.
 
   * ***Network:*** It takes about 20 minutes to download all the necessary FCC ULS files.
     This rate appears to be throttled on the FCC side.
-  * ***DBMS:***  Locally, with respect to the database, the database joins generally the most amount of time, even with indexes.
+  * ***DBMS:***  Locally, with respect to the database, the database joins generally the most amount of time, even using indexes.
     More RAM and faster hard drives help.
     I've used SQLite internally but I've kept the joins in SQL (rather than, say, dplyr or data.table) so that it's relatively easy to to switch DBMS back-ends.
 
@@ -37,7 +37,7 @@ I've made specific decisions about the data.
 
 I've tried to use Base R functionality in most places.
   The few libraries that are used are listed at the top of the R script.
-  The code begins with the main() function at the bottom of the R script.
+  The code begins with the `main()` function at the bottom of the R script.
 
 
 Enjoy,
