@@ -5,9 +5,9 @@
 This R script contains two main parts:
 
 1. Download the relevant FCC ULS Database files, and
-2. Combine them in a way that a 'HAM/Scanner' user might find useful
+2. Combine them in a way that a 'HAM/Scanner' user might find useful.
 
-There isn't enough room on GitHub to host the resulting datasets, so they are posted at: https://smithw.org/scma/
+There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at: https://smithw.org/scma/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
 
