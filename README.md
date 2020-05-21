@@ -46,7 +46,8 @@ I've tried to use Base R functionality in most places.
 I welcome your feedback.
 
 
-Enjoy,\
+Enjoy,
+
 Wayne Smith, Ph.D.\
 N6LHV\
 Southern California Monitoring Association (SCMA)\
