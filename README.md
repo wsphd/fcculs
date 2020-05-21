@@ -40,8 +40,8 @@ I've tried to use Base R functionality in most places.
 
 
 Enjoy,
-Wayne Smith, Ph.D.
 
+Wayne Smith, Ph.D.
 N6LHV
 
 Southern California Monitoring Association (SCMA)
