@@ -22,7 +22,7 @@ I've made specific decisions about the data.
     * I've included only the 'Active' licenses.
     * Either the location_county or control_county has to be populated.  If both are blank, the record isn't included.
 2. ***Exclusion***
-    * I've excluded the celluar bands.
+    * I've excluded the cellular bands.
     * I've excluded all frequencies above 1.3GHz.
 
 **Timing**:
@@ -39,10 +39,7 @@ I've tried to use Base R functionality in most places.
 
 
 Enjoy,
-
 Wayne Smith, Ph.D.
-
 N6LHV
-
-Southern California Monitoring Association
+Southern California Monitoring Association (SCMA)
 
