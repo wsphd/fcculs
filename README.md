@@ -27,10 +27,11 @@ I've made specific decisions about the data.
 
 **Timing**:
 
-It takes about 20 minutes to download all the necessary FCC ULS files.
-  This rate appears to be throttled on the FCC side.
-  Locally, with respect to the database, the database joins generally the most amount of time, even with indexes.  More RAM and faster hard drives help.
-  I've used SQLite internally but I've kept the joins in SQL (rather than, say, dplyr or data.table) so that it's relatively easy to to switch DBMS back-ends.
+  * ***Network:*** It takes about 20 minutes to download all the necessary FCC ULS files.
+    This rate appears to be throttled on the FCC side.
+  * ***DBMS:***  Locally, with respect to the database, the database joins generally the most amount of time, even with indexes.
+    More RAM and faster hard drives help.
+    I've used SQLite internally but I've kept the joins in SQL (rather than, say, dplyr or data.table) so that it's relatively easy to to switch DBMS back-ends.
 
 **Code**:
 
