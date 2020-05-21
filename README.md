@@ -10,7 +10,7 @@ This R script contains two main parts:
 There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at: https://smithw.org/scma/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
-  The files are indeed large, but they will load into both the LibreOffice Calc spreadsheet and MS-Excel spreadsheet.
+  The files are indeed large, but they will load into either the LibreOffice Calc spreadsheet or the MS-Excel spreadsheet.
 
 **Details**:
 
