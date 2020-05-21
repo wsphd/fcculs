@@ -1,18 +1,20 @@
 # fcculs
 
-**Summary**:
+**Summary**: (enough to start)
 
-This R script contains two main parts:
+This R script contains three main parts:
 
-1. Download the relevant FCC ULS Database files, and
-2. Combine them in a way that a 'HAM/Scanner' user might find useful.
+1. Download the relevant FCC ULS Database files,
+2. Combine them using various database techniques, especially "joins", and
+2. Generate a set of "flat-file" files that a 'HAM/Scanner' user might find useful.
 
 There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at: https://smithw.org/scma/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
-  The files are indeed large, but they will load into either the LibreOffice Calc spreadsheet or the MS-Excel spreadsheet.
+  The files are indeed large, but they will load into either the (non-commercial) LibreOffice Calc spreadsheet or the (commercial) MS-Excel spreadsheet.
+  Note that the column delimiter in the .csv files is a ***vertical bar*** ("|") not the usual ***comma*** (",").
 
-**Details**:
+**Details**: (for the curious)
 
 I've made specific decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single file (.csv or .xlsx) would load into a spreadsheet completely.
@@ -29,8 +31,8 @@ I've made specific decisions about the data.
 **Timing**:
 
   * ***Network:*** It takes about 20 minutes to download all the necessary FCC ULS files.
-    This rate appears to be throttled on the FCC side.
-  * ***DBMS:***  Locally, with respect to the database, the database joins generally the most amount of time, even using indexes.
+    This rate appears to be limited on the FCC side either at the network-level or the server-level.
+  * ***DBMS:***  Locally, with respect to database management, the database joins generally take the most amount of time, even using indexes.
     More RAM and faster hard drives help.
     I've used SQLite internally but I've kept the joins in SQL (rather than, say, dplyr or data.table) so that it's relatively easy to to switch DBMS back-ends.
 
@@ -39,6 +41,8 @@ I've made specific decisions about the data.
 I've tried to use Base R functionality in most places.
   The few libraries that are used are listed at the top of the R script.
   The code begins with the `main()` function at the bottom of the R script.
+
+I welcome your feedback.
 
 
 Enjoy,\
