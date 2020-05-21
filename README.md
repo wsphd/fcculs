@@ -44,4 +44,5 @@ Enjoy,\
 Wayne Smith, Ph.D.\
 N6LHV\
 Southern California Monitoring Association (SCMA)\
+<mailto:n6lhv@arrl.net>
 
