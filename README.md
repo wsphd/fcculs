@@ -41,6 +41,7 @@ I've made specific decisions about the data.
 I've tried to use Base R functionality in most places.
   The few libraries that are used are listed at the top of the R script.
   The code begins with the `main()` function at the bottom of the R script.
+  The code is very liberally commented.  This should help new users in general, and also, advanced users with alterations specifically.
 
 I welcome your feedback.
 
