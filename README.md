@@ -8,7 +8,8 @@ This R script contains three main parts:
 2. Combine them using various database techniques, especially "joins", and
 2. Generate a set of "flat-file" files that a 'HAM/Scanner' user might find useful.
 
-There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at:\ https://www.qsl.net/n6lhv/scma/fcculs/
+There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at:\
+https://www.qsl.net/n6lhv/scma/fcculs/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
   The files are indeed large, but they will load into either the (non-commercial) LibreOffice Calc spreadsheet or the (commercial) MS-Excel spreadsheet.
