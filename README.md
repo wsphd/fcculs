@@ -6,7 +6,7 @@ This R script contains three main parts:
 
 1. Download the relevant FCC ULS Database files,
 2. Combine them using various database techniques, especially "joins", and
-2. Generate a set of "flat-file" files that a 'HAM/Scanner' user might find useful.
+2. Generate a set of "flat files" that a 'HAM/Scanner' user might find useful.
 
 There isn't enough room on GitHub to host the resulting files (datasets), so instead they are posted at:\
 https://www.qsl.net/n6lhv/scma/fcculs/
