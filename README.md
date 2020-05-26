@@ -20,7 +20,9 @@ There is a file for each SoCal county in two formats: .csv and .xlsx.
 
 I've made specific decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single file (`.csv` or `.xlsx`) would load into a spreadsheet completely.
-  It should be relatively easy to modify the code to alter these assumptions.  Specifically,
+  It should be relatively easy to modify the code to alter these assumptions.
+
+**Data**:
 
 1. ***Inclusion***
     * I've included the ten (10) southernmost counties in SoCal beginning with Kern and San Luis Obisbo counties in the north.
@@ -33,6 +35,13 @@ I've made specific decisions about the data.
 3. ***Transformation***
     * I've converted lower or proper case to upper case for the State and County fields.  This eliminates inadvertent mismatches due to case sensitivity.
 
+**Code**:
+
+I've tried to use Base R functionality in most places.
+  The few libraries that are used are listed at the top of the R script.
+  The code begins with the `main()` function at the bottom of the R script.
+  The code is very liberally commented.  This should help new users in general, and also, advanced users with alterations specifically.
+
 **Timing**:
 
   * ***Network:*** It takes about 20 minutes to download all the necessary FCC ULS files.
@@ -40,13 +49,6 @@ I've made specific decisions about the data.
   * ***DBMS:***  Locally, with respect to database management, the database joins generally take the most amount of time, even using indexes.
     More RAM and faster hard drives help.
     I've used SQLite internally but I've kept the joins in SQL (rather than, say, `dplyr` or `data.table`) so that it's relatively easy to to switch DBMS back-ends.
-
-**Code**:
-
-I've tried to use Base R functionality in most places.
-  The few libraries that are used are listed at the top of the R script.
-  The code begins with the `main()` function at the bottom of the R script.
-  The code is very liberally commented.  This should help new users in general, and also, advanced users with alterations specifically.
 
 I welcome your feedback.
 
