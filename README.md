@@ -13,29 +13,33 @@ https://www.qsl.net/n6lhv/scma/fcculs/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
   The files are indeed large, but they will load into either the (non-commercial) LibreOffice Calc spreadsheet or the (commercial) MS-Excel spreadsheet.
-  Note that the column delimiter in the .csv files is a ***vertical bar*** ("|") not the usual ***comma*** (",").
+  Note that the column delimiter in the `.csv` files is a ***vertical bar*** ("|") not the usual ***comma*** (",").
+  A comma can't be used because, unfortunately, the FCC embeds commas in a couple of fields (especially address fields).
 
 **Details**: (for the curious)
 
 I've made specific decisions about the data.
-  This was partly done to make the overall process feasible, but also so that a single file (.csv or .xlsx) would load into a spreadsheet completely.
+  This was partly done to make the overall process feasible, but also so that a single file (`.csv` or `.xlsx`) would load into a spreadsheet completely.
   It should be relatively easy to modify the code to alter these assumptions.  Specifically,
 
 1. ***Inclusion***
-    * I've included the ten (10) counties in SoCal from the Mexican border in the south to Kern and San Luis Obisbo counties in the north.
-    * I've included only the 'Active' licenses.
+    * I've included the ten (10) southernmost counties in SoCal beginning with Kern and San Luis Obisbo counties in the north.
+    * I've included only the 'Active' licenses.  About 40% of the entire ULS database are non-active licenses.
     * Either the 'location_county' column or 'control_county' column has to be populated.  If both are blank, the record isn't included.
+    * I've included the 'Emissions' column due to the growing importance (not to mention variety) of digital systems.
 2. ***Exclusion***
     * I've excluded the cellular bands.
     * I've excluded all frequencies above 1.3GHz.
+3. ***Transformation***
+    * I've converted lower or proper case to upper case for the State and County fields.  This eliminates inadvertent mismatches due to case sensitivity.
 
 **Timing**:
 
   * ***Network:*** It takes about 20 minutes to download all the necessary FCC ULS files.
-    This rate appears to be limited on the FCC side either at the network-level or the server-level.
+    This rate appears to be limited on the FCC side either at the network-level or server-level.
   * ***DBMS:***  Locally, with respect to database management, the database joins generally take the most amount of time, even using indexes.
     More RAM and faster hard drives help.
-    I've used SQLite internally but I've kept the joins in SQL (rather than, say, dplyr or data.table) so that it's relatively easy to to switch DBMS back-ends.
+    I've used SQLite internally but I've kept the joins in SQL (rather than, say, `dplyr` or `data.table`) so that it's relatively easy to to switch DBMS back-ends.
 
 **Code**:
 
