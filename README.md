@@ -51,6 +51,11 @@ I've tried to use Base R functionality in most places.
     More RAM and faster hard drives help.
     I've used SQLite internally but I've kept the joins in SQL (rather than, say, `dplyr` or `data.table`) so that it's relatively easy to to switch DBMS back-ends.
 
+**Tips**:
+
+  * ***Searching:*** There are many spelling variants and misspellings.  It would be a herculean effort to try to correct those.
+    Although somewhat slower, I would encourage users to use wildcard searches or similiar search strategies, at least initially.
+
 I welcome your feedback.
 
 
