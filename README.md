@@ -33,7 +33,8 @@ I've made specific decisions about the data.
     * I've excluded the cellular bands.
     * I've excluded all frequencies above 1.3GHz.
 3. ***Transformation***
-    * I've converted lower or proper case to upper case for the State and County fields.  This eliminates inadvertent mismatches due to case sensitivity.
+    * I've converted lower (or proper) case to upper case for the State and County fields.  Ditto for the entity_name.
+    This eliminates inadvertent mismatches due to case sensitivity.
 
 **Code**:
 
