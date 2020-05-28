@@ -35,6 +35,9 @@ I've made specific decisions about the data.
 3. ***Transformation***
     * I've converted lower (or proper) case to upper case for the State and County fields.  Ditto for the entity_name.
     This eliminates inadvertent mismatches due to case sensitivity.
+4. ***Sizes***
+    * As used here, the resulting SQLite3 database size--all tables--is about 28GB.
+    The 'US' .csv file is ~14GB, and the 'CA' .csv file is ~2GB, so neither is posted online.
 
 **Code**:
 
@@ -54,7 +57,7 @@ I've tried to use Base R functionality in most places.
 **Tips**:
 
   * ***Searching:*** There are many spelling variants and misspellings.  It would be a herculean effort to try to correct those.
-    Although somewhat slower, I would encourage users to use wildcard searches or similiar search strategies, at least initially.
+    Although somewhat slower, I would encourage users to use wildcard searches or similiar search strategies, at least initially, for cities, addresses, and entity names.
 
 I welcome your feedback.
 
