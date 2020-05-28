@@ -37,7 +37,9 @@ I've made specific decisions about the data.
     This eliminates inadvertent mismatches due to case sensitivity.
 4. ***Sizes***
     * As used here, the resulting SQLite3 database size--all tables--is about 28GB.
-    The 'US' .csv file is ~14GB, and the 'CA' .csv file is ~2GB, so neither is posted online.
+    The 'US' .csv file (all states) is ~14GB, and the 'CA' .csv file (all CA counties) is ~2GB, so neither is posted online.  Contact me if you would like them.
+    Using ZIP, the .csv files will compress about 96% and the .xlsx files will compress about 26%.
+    I've left the files in non-zipped format; on the down side, this lengthens the download time, but on the up side, facilitates easier and more direct use.
 
 **Code**:
 
