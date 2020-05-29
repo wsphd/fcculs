@@ -44,11 +44,10 @@ I've made specific decisions about the data.
 **Code**:
 
 I've tried to use Base R functionality in most places.
-  The few libraries that are used are listed at the top of the R script.
-  They need to installed first.  This is easy to do and documented in the R script at the top of the script.
-  After downloading the R program from https://www.r-project.org/, you can use the `source` function to run the R script (e.g., `source( "uls-36.r" )`.
-  The code begins with the `main()` function at the bottom of the R script.
-  The code is very liberally commented.  This should help new users in general, and also, advanced users with alterations specifically.
+  * The few libraries that are used are listed at the top of the R script. They need to installed first.  This is easy to do and documented in the R script at the top of the script.
+  * After downloading the R program from https://www.r-project.org/, you can use the `source` function to run the R script (e.g., `source( "uls-36.r" )`.
+  * The code begins with the `main()` function at the bottom of the R script.
+  * The code is very liberally commented.  This should help new users in general, and also, advanced users with alterations specifically.
 
 **Timing**:
 
