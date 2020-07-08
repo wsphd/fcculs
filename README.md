@@ -25,7 +25,7 @@ I've made specific decisions about the data.
 **Data**:
 
 1. ***Inclusion***
-    * I've included the ten (10) southernmost counties in SoCal beginning with Kern and San Luis Obisbo counties in the north.
+    * I've included the ten (10) southernmost counties in SoCal beginning with Kern and San Luis Obispo counties in the north.
     * I've included only the 'Active' licenses.  This is just under 70% of the entire ULS database.
     * Either the 'location_county' column or 'control_county' column has to be populated.  If both are blank, the record isn't included.
     * I've included the 'Emissions' column due to the growing importance (not to mention variety) of digital systems.
