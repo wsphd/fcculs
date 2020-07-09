@@ -55,6 +55,8 @@ I've tried to use Base R functionality in most places.
     This rate appears to be limited on the FCC side either at the network-level or server-level.
   * ***DBMS:***  Locally, with respect to database management, the database joins generally take the most amount of time, even using indexes.
     More RAM and faster hard drives help.
+    I've successfully run the script on a laptop with 16GB or RAM, but frankly, more is recommended.
+    And since a sophisticated database query JOIN will inevitably swap to disk, faster, solid-state drives are preferred to slower, hard-disk drives.
     I've used SQLite internally but I've kept the joins in SQL (rather than, say, `dplyr` or `data.table`) so that it's relatively easy to to switch DBMS back-ends.
 
 **Tips**:
@@ -69,6 +71,6 @@ Enjoy,
 
 Wayne Smith, Ph.D.\
 N6LHV\
-Southern California Monitoring Association (SCMA)\
+[Southern California Monitoring Association (SCMA)](https://socalscanner.com/)\
 <mailto:n6lhv@arrl.net>
 
