@@ -1947,7 +1947,7 @@ f.main <- function() {
   # http://wireless.fcc.gov/uls/index.htm?job=transaction
   # total elapsed time ~ 21 minutes (the biggest factor is the throttled download speed from the FCC web site)
   # I can't seem to get more than 600 KB/sec on average from the FCC site.  Is the FCC rate-limiting their download thoughput?
-#  f.getAllFiles( v.zip.file.prefixes, v.data.file.prefixes )
+  f.getAllFiles( v.zip.file.prefixes, v.data.file.prefixes )
 
 
   # Step 2
