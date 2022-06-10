@@ -19,7 +19,7 @@ There is a file for each SoCal county in two formats: .csv and .xlsx.
 
 **Details**: (for the curious)
 
-I've made specific (opinionated) decisions about the data, as would be done for any type of flat-file conversion.
+I've made specific (opinionated) decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single `.csv` file would load (directly, or indirectly via a database) into a spreadsheet completely.
   It should be relatively easy to modify the code to alter these assumptions.
 
