@@ -12,12 +12,14 @@ There isn't enough room on GitHub to host the resulting files (datasets), so ins
 https://www.qsl.net/n6lhv/scma/fcculs/
 
 There is a file for each SoCal county in two formats: .csv and .xlsx.
-  The files are indeed large.  Small .csv files with a small number of records can be loaded into either the (non-commercial) LibreOffice Calc spreadsheet or the (commercial) MS-Excel spreadsheet.
-  However, most files will need to loaded either into a database, such as Sqlite or DuckDB, or loaded from a programming language such as R, Python, or Julia.
+  All .csv files (except for LOS ANGELES county) are small enough to be loaded into either the (non-commercial) LibreOffice Calc spreadsheet or the (commercial) MS-Excel spreadsheet.
+  Those two spreadsheets have a limit of 1,048,576 rows, and LOS ANGELES county simply won't fit.  The row limit in Google Sheets is even more constrained.
+  Therefore, most files will need to loaded either into a database, such as Sqlite or DuckDB, or loaded from a programming language such as R, Python, or Julia.
+  Upon filtering, a smaller .csv or even .xlsx file can be written as needed by a user.
 
 **Details**: (for the curious)
 
-I've made specific decisions about the data.
+I've made specific (opinionated) decisions about the data.
   This was partly done to make the overall process feasible, but also so that a single `.csv` file would load (directly, or indirectly via a database) into a spreadsheet completely.
   It should be relatively easy to modify the code to alter these assumptions.
 
